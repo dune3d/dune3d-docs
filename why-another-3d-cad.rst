@@ -10,11 +10,7 @@ Solvespace on the other hand gets the workflow part right, but falls short by no
 
 Having solved the similar problem for PCB CAD by developing Horizon EDA, I began pondering whether I could pull off the same thing for 3D CAD. After all, what does it take to make a 3D CAD?
 
- - Geometry kernel to do extrusions, intersections, chamfers, etc.: 
- While it's not a nice library to work with, Open CASCADE is the only 
- viable choice if we want to have STEP import/export and 
- fillets/chamfers. Fortunately, I have some experience with it from 
- dealing with STEP files in Horizon EDA. Also, 
+ - Geometry kernel to do extrusions, intersections, chamfers, etc.:  While it's not a nice library to work with, Open CASCADE is the only  viable choice if we want to have STEP import/export and  fillets/chamfers. Fortunately, I have some experience with it from  dealing with STEP files in Horizon EDA.
  - 3D viewport: Obviously, we need a way to put 3D geometry on screen, zoom/pan and select things. The 3D preview in Horizon EDA already does all of this, so I have a well-understood codebase I can reuse.
  - Constraint solver: Unlike with Horizon EDA where things just stay where you last moved them, in 3D CAD, it's commonplace to specify where things go by means of constraints that need to be solved. Turns out that Solvespace's solver is available as a library, so that part's also covered.
  - Editor infrastructure: Last but not least, we need code that takes care of the tools, undo/redo and all of the other bits and pieces that make up an interactive editor. While there'll be some differences, I felt confident that I could reuse and adapt the interactive manipulator from Horizon EDA.
