@@ -45,5 +45,6 @@ Take a look at the :doc:`top features <feature-overview>`, just :doc:`try it out
 
    build-win32
    build-linux
+   build-macos
    version
 

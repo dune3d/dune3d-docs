@@ -21,7 +21,6 @@ Make sure you got these dependencies installed:
 *  cmake (build-time only)
 *  meson (build-time only)
 *  eigen (build-time only, since it's just headers)
-*  range-v3 (build-time only, since it's just headers)
 *  git (build-time only, required when building from a git repo)
 *  python-gobject (build-time only)
 *  python-cairo (build-time only)

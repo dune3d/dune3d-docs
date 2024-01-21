@@ -47,7 +47,6 @@ Type/paste
    mingw-w64-x86_64-python \
    mingw-w64-x86_64-python-cairo \
    mingw-w64-x86_64-python-gobject \
-   mingw-w64-x86_64-range-v3 \
    zip \
    unzip \
    git \
