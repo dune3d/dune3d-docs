@@ -85,3 +85,5 @@ With Dune 3D, you can make best use of modern laptop's pointing
 devices. Apart from pixel-precision zooming and panning using 
 touchpads or trackpoints, you can use
 touchscreen gestures such as pinch-to-zoom.
+
+3D input devices are supported via `libspnav <https://spacenav.sourceforge.net/>`_.
