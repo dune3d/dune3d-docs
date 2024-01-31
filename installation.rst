@@ -7,10 +7,6 @@ Stable release
 A known-good snapshot from ongoing development.
 
 
-.. note::
-  There is no stable release yet.
-
-
 Windows
 ^^^^^^^
 
