@@ -67,7 +67,7 @@ Tools
 After having started a tool, it receives all keyboard and mouse input, 
 until the tool is finished or you end it by pressing :kbd:`Esc`.
 Look at the bar that appeared at the bottom of the viewport to see what
-pressing keys will d1o in this particular tool.
+pressing keys will do in this particular tool.
 
 
 Selection
