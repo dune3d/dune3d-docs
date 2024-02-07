@@ -153,7 +153,7 @@ window and the color of the points to make sure you got them.
 
 Since we don't need the 
 line for anything other than placing the workplane, it can be a 
-construction entity. To make it one, press :kbd:`x` while drawing it or 
+construction entity. To make it one, press :kbd:`g` while drawing it or 
 use "Set construction" from the context menu after the fact.
 
 Next, add the workplane with the "Draw workplane" tool. Clicking on the 
