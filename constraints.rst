@@ -113,7 +113,7 @@ at the same Y position (horizontal). Selecting a line is equivalent to selecting
 
 :Workplane: required
 :Selection: Two points or a line (2D or 3D)
-:Tool: Constrain horizontal distance, Constrain vertical distance
+:Tool: Constrain horizontal, Constrain vertical
 
 
 Diameter / Radius
@@ -219,7 +219,7 @@ This constraint can do two things:
 1. Constrains two lines to be parallel.
 
 :Workplane: none
-:Selection: Line (2D only) and arc
+:Selection: Two lines (2D or 3D)
 :Tool: Constrain parallel
 
 2. Constrains a line to be parallel to the normal vector of a workplane
