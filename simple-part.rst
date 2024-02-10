@@ -60,7 +60,8 @@ Arc center
 ^^^^^^^^^^
 
 Constrain the center of the arc to be on the origin of the workplane by 
-selecting both points and invoking the "Constrain coincident" tool.
+selecting both points and invoking the "Constrain coincident" tool from
+the context menu.
 
 To do so, first press :kbd:`Esc` to clear the selection, then click on 
 the arc's center point, followed by the workplane origin. Order doesn't 
@@ -77,7 +78,7 @@ Width
 ^^^^^
 
 Select the bottom horizontal line and use the "Constrain horizontal 
-distance" to set its width to 5mm.
+distance" tool to set its width to 5mm.
 
 .. image:: images/tutorial/constrain-horizontal-distance.png
 
@@ -97,7 +98,14 @@ We want to constrain the total height of the sketch, but we first need
 to add a point that sits at the top of the arc. 
 
 To to so, use the "Draw point in workplane" tool to place point on the 
-arc. Use the "Constrain vertical" tool to constrain it to be directly 
+arc.
+
+Same as all other tools, this one can be found in the menu by pressing 
+:kbd:`Space` and searching for it:
+
+.. image:: images/tutorial/point-in-workplane.png
+
+Use the "Constrain vertical" tool to constrain it to be directly 
 above the arc's center.
 
 After this, we should still have one degree of freedom.
@@ -129,7 +137,7 @@ You can change its height by dragging the lines on the top surface.
 
 To set its height, right click on one of the vertical lines and select 
 "Constrain distance". If nothing appears, turn off the solid model by 
-clicking on the box next to "Body" in the left side of the window and 
+clicking on the cube next to "Body" in the left side of the window and 
 drag the number so that it's outside of the solid model. You may then 
 re-enable the solid model and enter a distance value.
 
@@ -144,6 +152,7 @@ that we can use it to create the sketch for the pocket.
 
 First, create a new sketch from the plus icon in the workspace browser. 
 Then, use the "Draw Line in 3D" tool to draw a line as shown below. 
+We'll use it later to center the workplane on the face.
 This is easier to do with the solid model off. Make sure to start and 
 end the line from the two corner points so that the point-point 
 constraints are created automatically. Watch tool bar the bottom of the 
@@ -173,7 +182,8 @@ menu when selecting the newly-created workplane.
 
 This tool requires you then click on the the line that corresponds to 
 the workplane's horizontal direction followed by a second line to 
-completely constrain the rotation.
+define the plane. The workplane's normal will then be perpendicular to 
+both of the selected lines.
 
 You should now have a workplane that looks like this. Make it this 
 sketch's active workplane by selecting "Set workplane" from its context 
