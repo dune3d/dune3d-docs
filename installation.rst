@@ -38,7 +38,7 @@ Build from source
 
 
 If you want to compile it yourself, download the source tarball from
-`GitHub releases <https://github.com/horizon-eda/horizon/releases>`_ and follow the instructions in :doc:`build-linux`.
+`GitHub releases <https://github.com/dune3d/dune3d/releases>`_ and follow the instructions in :doc:`build-linux`.
 
 
 Development version
