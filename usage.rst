@@ -39,6 +39,17 @@ Double-click a workplane to center and align the view to it. Also see
 further actions available from the context and spacebar menu in the 
 "View" group.
 
+Help, I'm stuck!
+^^^^^^^^^^^^^^^^
+
+In some cases, such as looking at the ZX plane, the rotate axis coincide,
+leaving only one rotational degree of freedom. In this case, hold 
+:kbd:`Ctrl` to change the tilt axis or reset the tilt axis to go back 
+to normal rotation.
+
+If you're totally lost, use the "Reset view" action to look at the XY 
+plane.
+
 Solid model
 -----------
 
