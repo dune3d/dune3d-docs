@@ -115,7 +115,7 @@ Polar array
 A polar array group replicates entities from its source group as often 
 as specified in "Count" in circular fashion centered around a point. A 
 polar array group always requires a workplane to specify the plane of 
-rotation. 
+rotation. To create a polar array group, select a workplane first.
 
 By default, it adds three degrees of freedom: Two for the center point 
 position, one for the angular increment.
