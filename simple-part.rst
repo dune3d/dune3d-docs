@@ -198,7 +198,7 @@ Sketch pocket
 To view the workplane face-on, double-click it or select "Align & 
 center view to workplane" from its context menu.
 
-Wit the new workplane in place, we can proceed with the sketch for the 
+With the new workplane in place, we can proceed with the sketch for the 
 pocket. Start by drawing a hexagon with the "Draw regular polygon" 
 tool.
 
