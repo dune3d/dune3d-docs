@@ -183,7 +183,9 @@ menu when selecting the newly-created workplane.
 This tool requires you then click on the the line that corresponds to 
 the workplane's horizontal direction followed by a second line to 
 define the plane. The workplane's normal will then be perpendicular to 
-both of the selected lines.
+both of the selected lines. If you get an error "please click on a line
+from a previous group", this is because the reference lines can not lie
+in the current sketch and you need to have created a new sketch.
 
 You should now have a workplane that looks like this. Make it this 
 sketch's active workplane by selecting "Set workplane" from its context 
@@ -200,7 +202,9 @@ center view to workplane" from its context menu.
 
 With the new workplane in place, we can proceed with the sketch for the 
 pocket. Start by drawing a hexagon with the "Draw regular polygon" 
-tool.
+tool. If the line drawing and polygon controls are grayed out, you need
+to select "Set Workplane" in the workplane's context menu to make it the
+active workplane.
 
 .. image:: images/tutorial/draw-regular-polygon.png
 
