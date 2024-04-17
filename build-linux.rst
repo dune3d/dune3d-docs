@@ -14,6 +14,7 @@ Make sure you got these dependencies installed:
 *  cairomm
 *  opencascade
 *  uuid
+*  libepoxy
 *  pkg-config (build-time only)
 *  librsvg (build-time only)
 *  glm (build-time only, since it's just headers)
