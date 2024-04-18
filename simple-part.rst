@@ -71,7 +71,10 @@ context menu.
 .. image:: images/tutorial/constrain-point.png
 
 
-This should have removed two degrees of freedom.
+This should have removed two degrees of freedom. This added constraint is now
+also visible in your drawing as a violet symbol above the arc's center point:
+
+.. image:: images/tutorial/constrain-point-symbol.png
 
 
 Width
