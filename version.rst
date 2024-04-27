@@ -15,9 +15,9 @@ By Application version
 ----------------------
 
 .. csv-table::
-   :header: "Type", "1.0.0"
+   :header: "Type", "1.0.0", "1.1.0"
 
-   Document, 9
+   Document, 10, 12
 
 
 Changelog
@@ -32,3 +32,6 @@ Changelog
   - 7: Add point/line distance constraint
   - 8: Add point/plane distance constraint
   - 9: Add lock rotation constraint
+  - 10: Add intersection solid model operation
+  - 11: Add point in workplane constraint
+  - 12: Add symmetry constraints

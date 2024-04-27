@@ -73,6 +73,19 @@ Constrains a point to be in a plane defined by two lines.
 :Selection: Two lines, point
 :Tool: Constrain coincident
 
+
+Point in workplane
+------------------
+
+Constrains a point to be in a workplane
+
+:Workplane: none
+:Selection: Workplane, point
+:Tool: Constrain point in workplane
+
+Since version 1.1
+
+
 Point/plane distance
 --------------------
 
@@ -115,6 +128,31 @@ at the same Y position (horizontal). Selecting a line is equivalent to selecting
 :Selection: Two points or a line (2D or 3D)
 :Tool: Constrain horizontal, Constrain vertical
 
+
+Symmetric horizontal / vertical
+-------------------------------
+
+Constrains two points to be symmetric about the vertical sketch axis (horizontal) or to be 
+at symmetric about the horizontal sketch axis (vertical). Selecting a line is equivalent to selecting its endpoints.
+
+:Workplane: required
+:Selection: Two points or a line (2D or 3D)
+:Tool: Constrain symmetric horizontally / vertically
+
+Since version 1.1
+
+Symmetric about line
+--------------------
+
+Constrains two points to be symmetric about a line. Selecting a line is equivalent to selecting its endpoints.
+
+:Workplane: required
+:Selection: Two points or a line (2D or 3D)
+:Tool: Constrain symmetric about line
+
+Select the line the symmetry applies to in the tool.
+
+Since version 1.1
 
 Diameter / Radius
 -----------------
