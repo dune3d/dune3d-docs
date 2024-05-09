@@ -48,6 +48,11 @@ listed in the bar at the bottom of the 3D viewport.
 
 Clicking on the starting point closes the path.
 
+It's best to start from the bottom-left or bottom-right corner so that 
+the arc/line tangential constraints get created automatically. If these 
+didn't get created you can add them by selecting the arc and the line 
+leading up to it and invoking the "Constrain parallel" tool.
+
 Constrain
 ------------
 
