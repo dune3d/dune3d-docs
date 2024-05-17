@@ -29,7 +29,8 @@ Follow the instructions, now you should be able to install the remaining depende
      glm \
      pygobject3 \
      librsvg \
-     meson
+     meson \
+     cmake
 
 Now you can build the project using the ``./scripts/build_macos.sh`` script.
 
