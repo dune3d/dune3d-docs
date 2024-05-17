@@ -30,7 +30,8 @@ Follow the instructions, now you should be able to install the remaining depende
      pygobject3 \
      librsvg \
      meson \
-     cmake
+     cmake \
+     adwaita-icon-theme
 
 Now you can build the project using the ``./scripts/build_macos.sh`` script.
 
