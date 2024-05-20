@@ -19,17 +19,19 @@ Follow the instructions, now you should be able to install the remaining depende
 ::
 
    brew install \
-     python@3 \
-     llvm \
+     adwaita-icon-theme \
+     cmake \
      eigen \
-     opencascade \
-     pkg-config \
+     glm \
      gtk4 \
      gtkmm4 \
-     glm \
-     pygobject3 \
      librsvg \
-     meson
+     llvm \
+     meson \
+     opencascade \
+     pkg-config \
+     pygobject3 \
+     python@3
 
 Now you can build the project using the ``./scripts/build_macos.sh`` script.
 
