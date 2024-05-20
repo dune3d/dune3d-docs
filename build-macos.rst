@@ -28,13 +28,8 @@ Follow the instructions, now you should be able to install the remaining depende
      gtkmm4 \
      glm \
      pygobject3 \
-     librsvg
-
-Install meson from source (at the time of writing this, the stable version has an issue that breaks the build on macOS):
-
-::
-
-   brew install --HEAD meson
+     librsvg \
+     meson
 
 Now you can build the project using the ``./scripts/build_macos.sh`` script.
 
