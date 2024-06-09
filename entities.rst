@@ -27,9 +27,9 @@ A line in a workplane defined by its start and end point. It thus adds
 2D Arc
 -------
 
-An arc in a workplane defined by its start, end and center point. For 
+An arc in a workplane defined by its start, end and center points. For 
 each arc, there's an implicit constraint that constrains the center 
-point to have the same distance from both ends. It adds 5 degress of 
+point to have the same distance from both ends. It adds 5 degrees of 
 freedom.
 
 An arc with coincident start and end point is a full circle.
@@ -59,7 +59,7 @@ A line in 3D space defined by its start and end point. It thus adds
 Workplane
 ---------
 
-A workplane defines a local 2D coordinate system using with an origin 
+A workplane defines a local 2D coordinate system using an origin 
 point and a rotation in 3D space. It adds 6 degrees of freedom: 3 
 translational and 3 rotational.
 
