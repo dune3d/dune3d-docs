@@ -2,7 +2,7 @@ Constraints
 ===========
 
 Constraints are used to define the spatial relationship between 
-entities or parameters of entities themselves. Some constraints such a 
+entities or parameters of entities themselves. Some constraints such as 
 distance or angle allow entering a value.
 
 Some constraints can have a workplane. Unless otherwise noted, this 
@@ -100,7 +100,7 @@ entered value.
 Distance
 --------
 
-Constrains the (euclidean) distance between two points to the 
+Constrains the (Euclidean) distance between two points to the 
 entered value. Selecting a line is equivalent to selecting its endpoints.
 
 :Workplane: optional
