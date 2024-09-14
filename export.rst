@@ -4,7 +4,7 @@ Export
 Dune 3D supports exporting both 2D and 3D formats.
 
 3D: STL / STEP
-----------
+--------------
 
 To export the current group's solid model use the "Export STL" or "Export STEP" action available from the spacebar menu.
 The export only includes the solid model and omits imported STEP models.
