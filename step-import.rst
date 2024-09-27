@@ -20,3 +20,13 @@ The "Add anchors" tool adds points to reference geometry from the STEP
 model. Once added, points stay where they were placed, ignoring changes 
 from the referenced STEP model. Use the "Move anchor" tool to move 
 individual anchors to new positions.
+
+The shapes from an imported STEP model can also be made available in 
+the solid model of Sketch Groups by selecting "In solid model" in the 
+Selection tab. This is supposed to be useful for customizing existing 
+part, such as adding text to a 3D-printed phone case.
+
+To move anchors that fall inside of the solid after reloading a STEP 
+model, it can be shown as a wireframe only:
+
+.. image:: images/step-wireframe.png

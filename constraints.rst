@@ -10,7 +10,9 @@ means that the constraint applies in the workplane, that is all
 entities are projected onto the workplane.
 
 In general, constraints are created by selecting the to be constrained 
-entities and invoking the requisite tool.
+entities and invoking the requisite tool. Constraints can only be 
+created if at least one of the selected entities is in the current 
+group to prevent creating redundant or conflicting constraints.
 
 Points coincident
 -----------------
@@ -29,7 +31,20 @@ infinite from the constraint's point of view.
 
 :Workplane: optional
 :Selection: Line (2D or 3D), point
-:Tool: Constrain coincident
+:Tool: Constrain point on line
+
+Point on bezier
+---------------
+
+Constrains a point to be on a bezier curve. Even though the bezier 
+curve is only drawn for 0 ≤ t ≤ 1, t can fall outside of this range for 
+this constraint.
+
+:Workplane: required
+:Selection: Bezier curve, point
+:Tool: Constrain point on bezier
+
+Since version 1.2
 
 Midpoint
 --------
@@ -50,7 +65,7 @@ point.
 
 :Workplane: optional
 :Selection: Line (2D or 3D), point
-:Tool: Constrain distance
+:Tool: Constrain point/line distance
 
 
 Point on circle
@@ -61,7 +76,7 @@ point of view, arcs are full circles.
 
 :Workplane: none
 :Selection: Arc/Circle (2D or 3D), point
-:Tool: Constrain coincident
+:Tool: Constrain point on circle
 
 
 Point in plane
@@ -71,7 +86,7 @@ Constrains a point to be in a plane defined by two lines.
 
 :Workplane: none
 :Selection: Two lines, point
-:Tool: Constrain coincident
+:Tool: Constrain point in plane
 
 
 Point in workplane
@@ -94,7 +109,7 @@ entered value.
 
 :Workplane: none
 :Selection: Two lines, point
-:Tool: Constrain distance
+:Tool: Constrain point/plane distance
 
 
 Distance
@@ -106,6 +121,23 @@ entered value. Selecting a line is equivalent to selecting its endpoints.
 :Workplane: optional
 :Selection: Two points or a line (2D or 3D)
 :Tool: Constrain distance
+
+Aligned distance
+----------------
+
+Constrains the (euclidean) distance between two points projected onto 
+the alignment entity to be the entered value. Selecting a line is equivalent to selecting its endpoints.
+
+:Workplane: optional
+:Selection: Two points or a line (2D or 3D)
+:Tool: Constrain aligned distance
+
+The tool is special in the way that it's interactive. After invoking 
+the tool, click on the entity the distance vector should be aligned to. 
+This can be either a line (2D or 3D) or a workplane. Selecting a 
+workplane uses its normal vector.
+
+Since version 1.2
 
 Horizontal / Vertical distance
 ------------------------------
@@ -216,7 +248,7 @@ Constrains a line to be perpendicular to the vector between two points.
 
 :Workplane: none
 :Selection: Line (3D only) and two points
-:Tool: Constrain perpendicular
+:Tool: Constrain line/points perpendicular
 
 Angle
 ------
@@ -228,14 +260,17 @@ Constrains the angle between two lines to the entered value.
 :Tool: Constrain angle
 
 
-Arc/Arc tangent
----------------
+Curve/Curve tangent
+-------------------
 
-Constrains two arcs to be tangent at a shared point.
+Constrains two arcs or bezier curves to be tangent at a shared point.
 
 :Workplane: none
-:Selection: Two arcs
-:Tool: Constrain parallel
+:Selection: Two arcs or two bezier curves or arc and bezier curve
+:Tool: Constrain curve/curve tangent
+
+This constraint used to be called Arc/Arc tangent in versions prior to 
+1.2.
 
 
 Arc/Line tangent
@@ -244,10 +279,31 @@ Arc/Line tangent
 Constrains a line and an arc to be tangent at a shared point.
 
 :Workplane: none
-:Selection: Line (2D only) and arc
-:Tool: Constrain parallel
+:Selection: Point at which arc and line coincide
+:Tool: Constrain arc/line tangent
 
+Bezier/Line tangent
+-------------------
 
+Constrains a line and a bezier to be tangent at a shared point.
+
+:Workplane: none
+:Selection: Point at which bezier curve and line coincide
+:Tool: Constrain bezier/line tangent
+
+Since version 1.2
+
+Bezier/Bezier tangent symmetric
+-------------------------------
+
+Constraints the tangents of two bezier curves to be symmetric at a 
+shared point
+
+:Workplane: none
+:Selection: Point at which the two bezier curves coincide
+:Tool: Constrain tangent to be symmetric
+
+Since version 1.2
 
 Parallel
 --------
@@ -267,7 +323,6 @@ This constraint can do two things:
 :Tool: Constrain parallel
 
 
-
 Same orientation
 ----------------
 
@@ -278,7 +333,7 @@ orientation.
 
 
 :Workplane: none
-:Selection: Two workplanes, two step models, or one workplane and one step model
+:Selection: Two entities of these types: workplane, STEP model, document
 :Tool: Constrain same orientation
 
 Lock rotation
@@ -288,7 +343,7 @@ Locks the STEP model/workplane to the rotation set in the "Rotate" tool.
 Even with the constraint applied, the rotate tool can still be used.
 
 :Workplane: none
-:Selection: One workplane or STEP model
+:Selection: One workplane, STEP model or document
 :Tool: Lock rotation 
 
 

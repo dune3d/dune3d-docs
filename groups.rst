@@ -24,6 +24,14 @@ removed without adverse effects. That way, bodies are useful to create
 parts consisting of multiple sub-parts such a box with a lid. To add a 
 body, select the checkbox next to "Body" in the Group tab.
 
+Bodies can optionally have a solid model color assigned to them. By 
+default, it is set by the color theme. To make it easier to tell bodies 
+apart, their solid model color can be overridden. To do so, select the 
+checkbox next to the color button in the first group of the body or use 
+the context menu of the body's row in the workspace browser. The solid 
+model color is saved in the document and not part of the workspace view 
+state unlike he solid model visibility.
+
 Reference
 ---------
 
@@ -41,6 +49,8 @@ Sketch
 A sketch group is meant for adding entities either in a set workplane 
 or in 3D. 
 
+The solid model operation of a sketch group applies to STEP model 
+entities that are part of the solid model.
 
 Extrude
 -------
@@ -79,6 +89,27 @@ If a workplane is selected, lathe group is based on its normal vector.
 A lathe group adds no degrees of freedom.
 
 Operation has the the same semantics as in extrusion groups.
+
+
+Revolve
+-------
+
+Similar to a lathe group, a revolve group also rotates closed paths 
+from the source group along a specified point and vector. It differs 
+from a lathe group in the way that it only sweeps the paths by a 
+variable angle. It thus adds one degree of freedom. Setting the mode to 
+Offset makes the start angle another degree of freedom.
+
+Since version 1.2
+
+Loft
+----
+
+A loft group creates a solid by interpolating between two or more 
+sketches. It adds no degrees of freedom and requires each source group 
+to contain exactly one closed path.
+
+Since version 1.2
 
 
 Linear array
@@ -135,3 +166,20 @@ Unlike everywhere else, these edges are references to features in the
 solid model and thus are subject to the topological naming problem. 
 Therefore, it's recommended to apply these operations as the last step 
 in the document's modelling sequence.
+
+.. warning::
+  Chamfers and Fillets created with version 1.1 or earlier
+  (`this commit <https://github.com/dune3d/dune3d/commit/3b1cb48f9bd2044595d1fa3c71f633ea59bb49f9>`_ to be precise)
+  may appear on the wrong edge starting with in this version.
+
+
+Exploded cluster
+----------------
+
+This group can only be created from a cluster with the "Explode 
+cluster" tool. It contains the entities and constraint from that 
+cluster in the cluster's workplane so they can be edited.  To put them 
+back into the cluster, use the "Unexplode cluster" tool, also available 
+from the group tab.
+
+Since version 1.2

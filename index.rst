@@ -5,6 +5,9 @@ Dune 3D is a parametric 3D CAD application.
 
 Take a look at the :doc:`top features <feature-overview>`, just :doc:`try it out <installation>`.
 
+If you still have questions after reading the documentation, go ask them on `the matrix room <https://matrix.to/#/#dune3d:selfnet.de>`_ or
+`GitHub Discussions <https://github.com/dune3d/dune3d/discussions>`_.
+
 .. image:: images/screenshot.png
 
 .. toctree::
@@ -13,6 +16,7 @@ Take a look at the :doc:`top features <feature-overview>`, just :doc:`try it out
 
    why-another-3d-cad
    feature-overview
+   whats-new
 
 .. toctree::
    :maxdepth: 2
@@ -26,7 +30,10 @@ Take a look at the :doc:`top features <feature-overview>`, just :doc:`try it out
    :caption: Usage
 
    usage
+   copy-paste
    step-import
+   cluster
+   workspace-views
    export
    entries
    

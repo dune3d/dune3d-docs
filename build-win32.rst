@@ -91,3 +91,6 @@ Packaging
 
 To create the zip archive as it’s available from the CI, run
 ``./make_bindist.sh``.
+
+The CI build uses a [special build](https://github.com/carrotIndustries/mingw-opencascade-lite/) of opencascade that doesn't
+depend on ffmpeg and omits some unused modules to reduce the size an number of DLLs included in the distribution archive.

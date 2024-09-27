@@ -13,7 +13,8 @@ active workplane.
 All entities can either be construction or normal entities. 
 Construction entities are ignored when finding closed paths for 
 creating the solid model. Construction entities are only visible if 
-they're in the currently active group.
+they're in the currently active group or "Previous construction 
+entities" has been enabled in the view menu.
 
 2D Line
 -------
@@ -46,6 +47,17 @@ three degrees of freedom.
 :In Workplane: yes
 :Tool: Draw circle in workplane
 
+2D Bezier curve
+---------------
+
+A cubic bezier curve in a workplane defined by its start point, end 
+point and two control points. It thus adds 
+8 degrees of freedom.
+
+:In Workplane: yes
+:Tool: Draw contour, Draw bezier curve in workplane
+
+Since version 1.2
 
 3D Line
 -------
@@ -76,7 +88,7 @@ selecting it.
 STEP model
 ----------
 
-Geometry imported from a STEP file. :doc:`step-import` for more 
+Geometry imported from a STEP file. See :doc:`step-import` for more 
 details.
 
 :In Workplane: no
@@ -90,3 +102,61 @@ A point in a workplane defined by its location. It thus adds
 
 :In Workplane: yes
 :Tool: Draw point in workplane
+
+Document
+--------
+
+A document entity represents an instance of another loaded document. It adds 6 degrees of freedom: 3 
+translational and 3 rotational. To constrain the translational degrees 
+of freedom, constrain its origin point.
+
+Similar to STEP entities, document entities reference the file by 
+absolute or relative path.
+
+:In Workplane: no
+:Tool: Link document
+
+Since version 1.2
+
+
+Cluster
+-------
+
+A cluster entity groups multiple in-workplane entities (lines, bezier, 
+arcs, circles) into a single entity that can be scaled and rotated.
+See :doc:`cluster` for more details. Rotation, scale and aspect ratio 
+can be locked in the selection tab.
+
+:In Workplane: yes
+:Tool: Create cluster
+
+Since version 1.2
+
+Text
+----
+
+A cluster-like entity containing rendered OpenType text that can be 
+scaled and rotated. It has 
+multiple anchors on either side:
+
+:Bottom: bottommost point in the rendered text, depends on text 
+:Descend: descender of the selected font, doesn't depend on text
+:Ascend: ascender of the selected font, doesn't depend on text
+:Top: topmost point in the rendered text, depends on text 
+:Base: point at y=0
+
+Texts can be converted to clusters for modification using the "Convert 
+to cluster" tool.
+
+See the Selection tab for changing the font and locking scale and 
+rotation. OpenType features can be set in the font selection dialog.
+
+The rendered lines and curves are stored in the document. This means 
+that the text is preserved even if the chosen font isn't available. 
+Changing the text though requires the chosen font to be available as 
+fonts are not embedded in the document.
+
+:In Workplane: yes
+:Tool: Draw text
+
+Since version 1.2

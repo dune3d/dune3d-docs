@@ -15,9 +15,9 @@ By Application version
 ----------------------
 
 .. csv-table::
-   :header: "Type", "1.0.0", "1.1.0"
+   :header: "Type", "1.0.0", "1.1.0", "1.2.0"
 
-   Document, 10, 12
+   Document, 10, 12, 23
 
 
 Changelog
@@ -35,3 +35,14 @@ Changelog
   - 10: Add intersection solid model operation
   - 11: Add point in workplane constraint
   - 12: Add symmetry constraints
+  - 13: Add document entities
+  - 14: Add measurements
+  - 15: Add aligned distance constraint
+  - 16: Add revolve group
+  - 17: Add loft group
+  - 18: Add bezier curves
+  - 19: Add cluster entities
+  - 20: Add point on bezier constraint
+  - 21: Add text entities
+  - 22: Add option to use STEP entities in solid model
+  - 23: Add body colors

@@ -4,8 +4,8 @@ Usage
 Navigation
 ----------
 
-Move around the 3D viewport either with mouse, touchpad, trackpoint or 
-touchscreen.
+Move around the 3D viewport either with mouse, touchpad, trackpoint, 
+touchscreen or keyboard.
 
 Mouse
 ^^^^^
@@ -18,6 +18,8 @@ Mouse
 :Double middle click:  Reset tilt
 :Scrolling:  Zoom
 
+Several rotation schemes for translating 2D motion to 3D rotation are 
+available in the settings dialog.
 
 Trackpoint
 ^^^^^^^^^^
@@ -30,7 +32,16 @@ Trackpoint
 Touchpad / Touchscreen
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Use two-finger gestures for pan and zoom.
+Use two-finger gestures for pan, zoom and rotation.
+
+Keyboard
+^^^^^^^^
+
+:Arrow keys:  Pan
+:Arrow keys + Shift: Rotate
+:Left/right + Shift + Ctrl: Tilt
+
+These key bindings can be configured in the preferences dialog.
 
 Actions
 ^^^^^^^
@@ -42,8 +53,9 @@ further actions available from the context and spacebar menu in the
 Help, I'm stuck!
 ^^^^^^^^^^^^^^^^
 
-In some cases, such as looking at the ZX plane, the rotate axis coincide,
-leaving only one rotational degree of freedom. In this case, hold 
+In some cases, such as looking at the ZX plane, the rotation axis coincide,
+leaving only one rotational degree of freedom when using the turntable 
+rotation scheme. In this case, hold 
 :kbd:`Ctrl` to change the tilt axis or reset the tilt axis to go back 
 to normal rotation.
 
@@ -54,7 +66,9 @@ Solid model
 -----------
 
 Show or hide the current body's solid model by clicking on the cube 
-next to it in the workspace browser in the left side of the window.
+next to it in the workspace browser in the left side of the window. 
+Right-clicking on a body row in the workspace browser opens a context 
+menu for renaming the body or changing its solid model color.
 
 Use clipping planes to hide parts of the solid model.
 
@@ -81,6 +95,17 @@ Look at the bar that appeared at the bottom of the viewport to see what
 pressing keys will do in this particular tool.
 
 
+Points
+------
+
+Points are rendered as different icons depending on their type:
+
+:■ Square: End points of lines, arcs, and bezier curves
+:◆ Diamond: Origins of workplanes, STEP models, document entities, clusters and texts
+:▼ Down-pointing triangle: Anchors of STEP models, clusters and texts
+:● Circle: Bezier control points
+:✖ Cross: Centers of circles and arcs
+
 Selection
 ---------
 
@@ -91,7 +116,11 @@ pressing :kbd:`Del`.
 
 Clicking on an item switches to click select mode. In click select 
 mode, the current selection is retained until it's explicitly modified. 
-Clicking on an item adds or removes it from the current selection.
+Clicking on an item adds or removes it from the current selection. 
+
+Clicking on an item multiple times brings up the selection menu to 
+accurately select overlapping items. This menu can be invoked directly
+by holding down :kbd:`Shift` when clicking on an item.
 
 Pressing :kbd:`Esc` clears the current selection and returns to hover 
 select mode.
@@ -123,3 +152,19 @@ Workplanes
 The current group's workplane is shown in the status bar. Clear the 
 checkbox to temporarily turn off the group's workplane for constraining 
 in 3D. The active workplane is rendered with a double border.
+
+Multiple documents
+------------------
+
+From version 1.2 onward, multiple documents can be opened in one 
+window simultaneously, though just one document can be active at a 
+time. The active document is shown in boldface in the workspace browser.
+Only the active document can be interacted with. To switch the active 
+document, select one of its groups in the workspace browser or 
+double-click on one of its entities. Workplanes from inactive documents 
+are hidden to reduce clutter.
+
+This feature closely interacts with Document entities. Linking another 
+document as an entity also opens it in the current window. Changes to 
+the document are automatically reflected in all of its instances 
+(document entities).

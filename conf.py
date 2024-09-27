@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'dune3d'
-copyright = '2023, Lukas K.'
+copyright = '2024, Lukas K.'
 author = 'Lukas K.'
 
 # The short X.Y version
