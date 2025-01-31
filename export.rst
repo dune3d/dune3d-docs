@@ -14,7 +14,7 @@ The export only includes the solid model and omits imported STEP models.
 
 The "Export Paths" action exports all closed paths in current group's 
 active workplane to an SVG document. It also includes closed paths in 
-workplanes from other groups, projecting them onto the current group's
+workplanes from other visible groups, projecting them onto the current group's
 workplane.
 
 2D: Projection
