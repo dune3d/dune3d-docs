@@ -22,7 +22,8 @@ new body isn't aware of the solid model of the preceding body. Bodies
 have no effect on entities and constraints and can be created and 
 removed without adverse effects. That way, bodies are useful to create 
 parts consisting of multiple sub-parts such a box with a lid. To add a 
-body, select the checkbox next to "Body" in the Group tab.
+body, select the checkbox next to "Body" in the Group tab or click on
+"Sketch in new Body" in the plus menu below the list of groups.
 
 Bodies can optionally have a solid model color assigned to them. By 
 default, it is set by the color theme. To make it easier to tell bodies 
@@ -170,7 +171,7 @@ in the document's modelling sequence.
 .. warning::
   Chamfers and Fillets created with version 1.1 or earlier
   (`this commit <https://github.com/dune3d/dune3d/commit/3b1cb48f9bd2044595d1fa3c71f633ea59bb49f9>`_ to be precise)
-  may appear on the wrong edge starting with in this version.
+  may appear on the wrong edge starting with version 1.2.
 
 
 Exploded cluster
@@ -183,3 +184,84 @@ back into the cluster, use the "Unexplode cluster" tool, also available
 from the group tab.
 
 Since version 1.2
+
+.. _groups-mirror:
+
+Mirror Horizontal / Vertical
+----------------------------
+
+A mirror group mirrors entities across the horizontal or vertical axis 
+of its workplane. A mirror group therefore must always have an active 
+workplane. In-workplane entities will only get mirrored if they're in 
+the group's workplane. Entities in 3D space and the solid model will 
+get mirrored across a plane defined by the horizontal/vertical axis of 
+the workplane and its normal vector.
+
+The "Include source" switch defines whether or not the source entities 
+should be present as-is in the mirror group. This is intended to be 
+used to make symmetric extrusions and the like.
+
+Since version 1.3
+
+Solid model operation
+---------------------
+
+A solid model operation group performs a solid model operation (that is: 
+union/difference/intersection) between two solid models of arbitrary 
+groups. Unlike all other groups that generate a solid model, it's not 
+bound to the standard modeling sequence that only considers the 
+previous group's solid model. It's therefore possible to perform 
+operations on the solid models from two otherwise independent bodies.
+
+This group adds no entities or degrees of freedom.
+
+Since version 1.3
+
+Clone
+-----
+
+A clone group copies all entities from the source group's active 
+workplane into its own active workplane. A clone group must therefore 
+always have an active workplane. When creating a clone group, 
+the current group and its workplane become the source of the clone
+group. The workplane reference is stored in the clone group, so 
+changing the active workplane of the source group has no effect. To 
+create a clone group, the current group must have an active 
+workplane.
+
+It's intended use case is reusing paths for extrude groups in another 
+place or orientation.
+
+This group adds no degrees of freedom.
+
+Since version 1.3
+
+.. _groups-pipe:
+
+Pipe
+----
+
+A pipe group extrudes closed paths from its source group along one or 
+more spine entities. The selected spine entities must form a path, i.e. 
+have coinciding end points. Supported spine entities are:
+
+ - Line in workplane
+ - Arc in workplane
+ - Bezier curve in workplane
+
+While all spine entities must be in a workplane, they can still be in 
+different workplanes to each other, making it possible to create solid models that 
+look like this:
+
+.. image:: images/pipe.png
+
+To select spine entities, use the so-called tool or click on the button 
+next to Spine in the Group tab.
+
+For proper solid model generation, it can be required to set a start 
+point. A start point can be set clicking on a point that's part of a 
+spine entity in the "Select spine entities" tool.
+
+This group adds no entities or degrees of freedom.
+
+Since version 1.3

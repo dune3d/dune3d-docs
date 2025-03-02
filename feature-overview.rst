@@ -13,8 +13,18 @@ versatile draw contour tool.
 .. image:: images/sketch.png
 
 
-Pick from over 20 constraints to best express your design intent. Reuse 
-entities and constraints from other sketches and documents with copy 
+Pick from over 20 constraints to best express your design intent. The 
+smart context menu and dedicated constrain menu only show constraints 
+applicable to the current selection and provide an instant preview 
+before applying the constraint.
+
+.. raw:: html
+
+	<video autoplay loop>
+	   <source src="_static/constraint-preview.mp4" type="video/mp4">
+	</video>
+
+You can reuse entities and constraints from other sketches and documents with copy 
 and paste.
 
 Make it 3D
@@ -28,6 +38,10 @@ or lathe groups.
 Revolution and loft groups are supported as well.
 
 .. image:: images/loft-revol.png
+
+With pipe groups, you can extrude a sketch along a path.
+
+.. image:: images/pipe.png
 
 
 Use constraints in 3D
@@ -89,7 +103,7 @@ off-the-shelf hardware in your document.
 .. image:: images/step-import.png
 
 Imported STEP models can also be integrated into the solid model for 
-modification.
+modification. See :doc:`step-import` for more information.  
 
 
 Import DXF files
@@ -101,6 +115,16 @@ entity. This is especially useful for logos and such.
 
 .. image:: images/dxf.png
 
+The "create coincident constraints" tool can be used to fix rounding 
+errors that causes paths to be not closed. See :doc:`dxf-import` for more information.
+
+Import bitmap pictures
+----------------------
+
+Import photos or scans to reference in a sketch. By placing anchors, you can
+precisely scale the imported picture or reference specific points in constraints.
+
+.. image:: images/picture.png
 
 Render text
 -----------

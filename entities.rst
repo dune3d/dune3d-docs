@@ -160,3 +160,21 @@ fonts are not embedded in the document.
 :Tool: Draw text
 
 Since version 1.2
+
+Picture
+-------
+
+A bitmap picture in a workplane that can be translated, rotated and 
+scaled. Once imported, pictures get stored in the `.d3dpic` folder 
+alongside the document. See the selection tab for locking angle or aspect ratio. After 
+importing, a picture as four anchors on the corners that can't be 
+moved or deleted. Use the "Add anchor" tool to add new anchors at 
+arbitrary positions. Once placed, a picture anchor can be moved to a 
+new position using the "Move anchor" tool. Anchors can be used for 
+aligning entities to points on the picture or for positioning and 
+scaling the picture itself.
+
+:In Workplane: yes
+:Tool: Import picture
+
+Since version 1.3

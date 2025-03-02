@@ -32,6 +32,7 @@ If you still have questions after reading the documentation, go ask them on `the
    usage
    copy-paste
    step-import
+   dxf-import
    cluster
    workspace-views
    export
@@ -53,5 +54,6 @@ If you still have questions after reading the documentation, go ask them on `the
    build-win32
    build-linux
    build-macos
+   python
    version
 

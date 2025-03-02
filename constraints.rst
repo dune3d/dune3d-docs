@@ -10,7 +10,9 @@ means that the constraint applies in the workplane, that is all
 entities are projected onto the workplane.
 
 In general, constraints are created by selecting the to be constrained 
-entities and invoking the requisite tool. Constraints can only be 
+entities and invoking the requisite tool. In addition to the context 
+and spacebar menu, there's a menu dedicated to adding constrains 
+accessible by pressing :kbd:`z`. Constraints can only be 
 created if at least one of the selected entities is in the current 
 group to prevent creating redundant or conflicting constraints.
 
