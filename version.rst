@@ -15,7 +15,7 @@ By Application version
 ----------------------
 
 .. csv-table::
-   :header: "Type", "1.0.0", "1.1.0", "1.2.0"
+   :header: "Type", "1.0.0", "1.1.0", "1.2.0", "1.3.0"
 
    Document, 10, 12, 23
 
@@ -46,3 +46,10 @@ Changelog
   - 21: Add text entities
   - 22: Add option to use STEP entities in solid model
   - 23: Add body colors
+  - 24: Add h/v mirror groups
+  - 25: Add solid model operation group
+  - 26: Support constraining workplanes/STEP entities to circles
+  - 27: Fix direction for aligned distance with workplanes
+  - 28: Add clone group
+  - 29: Add pipe group
+  - 30: Add picture entities

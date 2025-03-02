@@ -1,6 +1,72 @@
 What's new
 ==========
 
+In Version 1.3
+--------------
+
+See `the changelog for version 1.3 <https://github.com/dune3d/dune3d/blob/v1.3.0/CHANGELOG.md#version-130>`_ for a complete list of changes.
+
+Picture import
+^^^^^^^^^^^^^^
+
+Import photos or scans to reference in a sketch. By placing anchors, you can
+precisely scale the imported picture or reference specific points in constraints.
+
+.. image:: images/picture.png
+
+Where to find it: In a sketch group with an active workplane, search for "Import picture" in the spacebar menu.
+
+Constraint preview
+^^^^^^^^^^^^^^^^^^
+
+Hover over constraints in the context or new constrain menu and get an instant preview of what the constraint will
+do to your sketch once it's applied.
+
+.. raw:: html
+
+	<video autoplay loop>
+	   <source src="_static/constraint-preview.mp4" type="video/mp4">
+	</video>
+
+Where to find it: Open the new constrain menu by pressing :kbd:`z` or right-click.
+
+Pipe groups
+^^^^^^^^^^^
+
+With :ref:`pipe groups<groups-pipe>`, you can extrude a sketch along a path.
+
+.. image:: images/pipe.png
+
+Where to find it: Click the plus button below the groups list and select "Pipe".
+
+Curvature combs
+^^^^^^^^^^^^^^^
+
+Enable curvature combs, to tweak bezier curves for super-smooth corners.
+
+.. image:: images/curvature-comb.png
+
+Where to find it: In the view options menu in the status bar, increase the curvature comb scale.
+
+
+Mirror groups
+^^^^^^^^^^^^^
+
+Use :ref:`mirror groups<groups-mirror>` to quickly create symmetric objects.
+
+.. image:: images/mirror.png
+
+Where to find it: Click the plus button below the groups list and select "Mirror horizontally" or "Mirror vertically".
+
+Selection menu
+^^^^^^^^^^^^^^
+
+The selection menu that was previously opened by clicking multiple times
+can now be opened by clicking and holding the left mouse button. That way,
+the menu also works in tools that allow selecting entities such as when
+drawing a line and placing a constraint on an existing point.
+
+
 In Version 1.2
 --------------
 

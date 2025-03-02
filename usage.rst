@@ -80,10 +80,12 @@ All tools and actions are available from the spacebar menu. Open it by
 by pressing :kbd:`Space` anywhere in the 3D viewport.
 
 Tools and actions specific to the selection are also available from the 
-context menu that can be invoked by the right mouse button.
+context menu that can be invoked by the right mouse button. For 
+constraints, there's a dedicated menu that can be invoked by pressing 
+:kbd:`z`.
 
 For some tools and actions, there are predefined keyboard shortcuts 
-that are listed in the spacebar menu. All keyboard shortcuts can be 
+that are listed in the spacebar and context menu. All keyboard shortcuts can be 
 customized in the preferences window.
 
 Tools
@@ -101,8 +103,8 @@ Points
 Points are rendered as different icons depending on their type:
 
 :■ Square: End points of lines, arcs, and bezier curves
-:◆ Diamond: Origins of workplanes, STEP models, document entities, clusters and texts
-:▼ Down-pointing triangle: Anchors of STEP models, clusters and texts
+:◆ Diamond: Origins of workplanes, STEP models, document entities, clusters, texts and pictures
+:▼ Down-pointing triangle: Anchors of STEP models, clusters, texts and pictures
 :● Circle: Bezier control points
 :✖ Cross: Centers of circles and arcs
 
@@ -118,8 +120,8 @@ Clicking on an item switches to click select mode. In click select
 mode, the current selection is retained until it's explicitly modified. 
 Clicking on an item adds or removes it from the current selection. 
 
-Clicking on an item multiple times brings up the selection menu to 
-accurately select overlapping items. This menu can be invoked directly
+Long-clicking on an item brings up the selection menu to 
+accurately select overlapping items. This also works in tools. The menu can be invoked directly
 by holding down :kbd:`Shift` when clicking on an item.
 
 Pressing :kbd:`Esc` clears the current selection and returns to hover 
