@@ -82,10 +82,14 @@ extrusion group.
 Lathe
 -----
 
-A lathe group rotates closed paths from the source group's active 
-workplane along a specified point and vector. To specify it,
-either a line or a workplane must be selected when creating the group. 
-If a workplane is selected, lathe group is based on its normal vector.
+A lathe group creates a solid by rotating closed paths from the source
+group's active workplane along a specified point and vector. To specify
+it, either a line or a workplane must be selected when creating the
+group. If a workplane is selected, lathe group is based on its normal
+vector.
+
+For proper solid model generation, the paths should not cross over the
+vector, as otherwise the body will self-intersect and cancel itself out.
 
 A lathe group adds no degrees of freedom.
 
