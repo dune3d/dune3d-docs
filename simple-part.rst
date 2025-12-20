@@ -1,10 +1,8 @@
 Designing a simple part
 =======================
 
-| In this tutorial, we're going to design a simple part consisting of a prism with a pocket in it. 
-| While the part itself isn't particularly useful on its own, this should give a good overview on how to use Dune 3D.
-
-The final part will look like this:
+| Let's design a simple part consisting of a prism with a pocket. 
+| This should give a good overview on how to use **Dune 3D**.
 
 .. image:: images/tutorial/final.png
 
@@ -14,14 +12,12 @@ Open a new document
 
 Start Dune 3D and create a **New Document**.
 
-Though not strictly required, you can turn off all workplanes except the 
-**XY** one to reduce clutter by switching to the **"References"** group and 
-turning them **off**.
+| For better visibility, turn off all workplanes except the **XY** one 
+| by switching to the **"References"** group and turning them **off**.
 
 .. image:: images/tutorial/part-ref-workplanes.png
 
-
-When that's done, remember to switch back to the **"Sketch"** group by clicking on **"Sketch1"**.
+When done, remember to switch back to the **"Sketch"** group by clicking on **"Sketch1"**.
 
 
 Sketch
@@ -40,8 +36,7 @@ to create a sketch that looks like this:
 To draw the **arc**, press :kbd:`a` while the tool is active.
 
 It will automatically constrain almost-vertical/horizontal lines to be 
-exactly and creates coincident constraints when clicking on an 
-entity. 
+exact and creates coincident constraints when clicking on an entity. 
 
 This and other behaviour can be configured with the shortcuts 
 listed in the bar at the bottom of the 3D viewport:
@@ -94,15 +89,15 @@ To set the width to 5mm, right-click onto the horizontal line and to invoke the 
 
 .. image:: images/tutorial/constrain-horizontal-distance.png
 
-| Then drag the number that appears away from the line to make it easier to read. 
-| Double-click it to enter the distance.
+| Drag the appearing number away from the line to make it easier to read. 
+| Double-click it to enter the correct distance.
 
 .. image:: images/tutorial/width-5mm.png
 
-We should now be left with one degree of freedom.
+Now We should be left with only one degree of freedom.
 
 .. note::
- You can also just select the line an press :kbd:`c` :kbd:`d`  :kbd:`h` 
+ You can also just select the line and press :kbd:`c` :kbd:`d`  :kbd:`h` 
 
 
 Height
@@ -119,8 +114,6 @@ and place the point on the arch.
 
 Then use the **"Constrain vertical"** tool (right-click) to constrain it to be directly above the arc's center.
 
-After this, we should still have one degree of freedom.
-
 .. image:: images/tutorial/arc-dot.png
 
 Select the point on the arc and one of the points from the bottom line 
@@ -133,7 +126,7 @@ The end result should have zero degrees of freedom and look like this:
 Extrude
 -------
 
-With the 2D sketch being fully constrained, we move on to make it 3D.
+With the 2D sketch being fully constrained, let's make it 3D.
 
 In the **workspace browser**, click the plus (+) icon to add an extrusion group. 
 
@@ -159,21 +152,21 @@ To set its height, right-click on one of the vertical lines and select **"Constr
 Create workplane
 ----------------
 
-Lets place a workplane at the center of the front face to create the pocket sketch.
+Place a workplane at the center of the front face to create the pocket sketch.
 
 Create a new sketch from the plus (+) icon in the **workspace browser**. 
 
-Hit :kbd:`Space` and get the **"Draw Line in 3D"** tool to draw a line as shown below.
+Press :kbd:`Space` and get the **"Draw Line in 3D"** tool to draw a line as shown below.
 
 .. note::
  You can also hit :kbd:`d` :kbd:`3` to get the **"Draw Line in 3D"** tool.
 
-This might be is easier with wireframe view (solid model off).
+This might be is easier in wireframe view (solid model off).
 
 .. image:: images/tutorial/draw-line-3d.png
 
 | Draw the line as a **construction entity** by hiting :kbd:`g` 
-| or use "Set construction" from the **context menu** afterwards.
+| or use **"Set construction"** from the **context menu** (right-click) afterwards.
 
 .. note::
  :kbd:`g` toggles between construction and normal line mode.
@@ -201,10 +194,10 @@ Use the **"Constrain workplane normal"** tool available when **right-clicking** 
 
 .. image:: images/tutorial/constrain-workplane-normal.png
 
-The **"Constrain workplane normal"** tool requires you to click on the the line which corresponds to the workplane's horizontal direction
+The **"Constrain workplane normal"** tool requires to click on the the line which corresponds to the workplane's horizontal direction
 followed by a second line to define the plane.
 
-The workplane's normal will then be perpendicular to both of the selected lines.
+The workplane's normal will be perpendicular to both of the selected lines.
 
 .. note::
  If you get the error **"please click on a line from a previous group"** 
@@ -294,5 +287,5 @@ Export
 
 
 
-**Congratulation and welcome on board!**
-
+| Here ends this tutorial, 
+| **Congratulation, you did a great job!**
