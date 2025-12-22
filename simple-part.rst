@@ -159,13 +159,13 @@ Create a new sketch from the plus (+) icon in the **workspace browser**.
 Press :kbd:`Space` and get the **"Draw Line in 3D"** tool to draw a line as shown below.
 
 .. note::
- You can also hit :kbd:`d` :kbd:`3` to get the **"Draw Line in 3D"** tool.
+ You can also press :kbd:`d` :kbd:`3` to get the **"Draw Line in 3D"** tool.
 
 This might be is easier in wireframe view (solid model off).
 
 .. image:: images/tutorial/draw-line-3d.png
 
-| Draw the line as a **construction entity** by hiting :kbd:`g` 
+| Draw the line as a **construction entity** by pressing :kbd:`g` 
 | or use **"Set construction"** from the **context menu** (right-click) afterwards.
 
 .. note::
@@ -190,7 +190,7 @@ We still need to constrain its rotation to be in plane with the face.
 Use the **"Constrain workplane normal"** tool available when **right-clicking** the newly created **workplane**.
 
 .. note::
- You can also hit :kbd:`c` :kbd:`w` to activate the **"Constrain workplane normal"** tool.
+ You can also press :kbd:`c` :kbd:`w` to activate the **"Constrain workplane normal"** tool.
 
 .. image:: images/tutorial/constrain-workplane-normal.png
 
