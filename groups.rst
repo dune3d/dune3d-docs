@@ -31,17 +31,19 @@ apart, their solid model color can be overridden. To do so, select the
 checkbox next to the color button in the first group of the body or use 
 the context menu of the body's row in the workspace browser. The solid 
 model color is saved in the document and not part of the workspace view 
-state unlike he solid model visibility.
+state unlike solid model visibility.
 
 Reference
 ---------
 
 A reference group is the first group in any document. It automatically contains three 
 workplanes, one for each axis. Neither the group nor its workplanes can 
-be deleted. Reference groups can't be added explicitly.
+be deleted. Reference groups can't be added explicitly. Pressing delete
+on a reference workplane hides it. I can be made visible in the group 
+settings of the reference group.
 
-It's possible to add entities in the reference group, but not 
-recommended.
+It's not possible to add entities to the reference group or to set an 
+active workplane.
 
 
 Sketch
@@ -145,6 +147,18 @@ point, adding two or three degrees of freedom.
 If the source group has a solid model, its operation is repeated for 
 each instance of the array.
 
+.. _groups-array-multi-source:
+
+Since version 1.4, multiple source groups are supported. The array 
+operation is repeated for all source groups. Solid models are first 
+accumulated using each source group's solid model operation to make up
+the array group's solid model and then 
+applied to the body using the array group's solid model operation. This 
+means that the solid model operation of the first group has no effect.
+A limitation of this implementation is that it's not possible to use 
+multiple source groups that add and subtract from the accumulated solid 
+model.
+
 Polar array
 -----------
 
@@ -156,8 +170,8 @@ rotation. To create a polar array group, select a workplane first.
 By default, it adds three degrees of freedom: Two for the center point 
 position, one for the angular increment.
 
-The offset and handling of the solid model work just like in the linear 
-array group.
+Offset, handling of the solid model and multiple source groups work
+just like in the linear array group.
 
 
 Fillet / Chamfer
@@ -204,6 +218,8 @@ the workplane and its normal vector.
 The "Include source" switch defines whether or not the source entities 
 should be present as-is in the mirror group. This is intended to be 
 used to make symmetric extrusions and the like.
+
+Solid model handling is identical to array groups.
 
 Since version 1.3
 

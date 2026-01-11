@@ -75,12 +75,20 @@ A workplane defines a local 2D coordinate system using an origin
 point and a rotation in 3D space. It adds 6 degrees of freedom: 3 
 translational and 3 rotational.
 
+The draw workplane tool automatically rotates the drawn workplane so 
+that it best matches the camera angle. This can be toggled by pressing 
+:kbd:`a`.
+
 Use the "Constrain workplane normal", "Constrain same orientation" or 
 "Lock rotation"
 tools to constrain the rotational degrees of freedom.
 
 A workplane's size and name can be changed in the "Selection" tab after 
 selecting it.
+
+Workplanes not used in the current group can be hidden in the view menu 
+at the bottom of the viewport using the "Hide irrelevant workplanes" 
+option.
 
 :In Workplane: no
 :Tool: Draw workplane
@@ -174,7 +182,10 @@ new position using the "Move anchor" tool. Anchors can be used for
 aligning entities to points on the picture or for positioning and 
 scaling the picture itself.
 
+The paste picture tool can be used to import a bitmap from the 
+clipboard.
+
 :In Workplane: yes
-:Tool: Import picture
+:Tool: Import picture / Paste picture
 
 Since version 1.3

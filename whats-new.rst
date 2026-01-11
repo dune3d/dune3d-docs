@@ -1,6 +1,77 @@
 What's new
 ==========
 
+In Version 1.4
+--------------
+
+See `the changelog for version 1.4 <https://github.com/dune3d/dune3d/blob/v1.4.0/CHANGELOG.md#version-140>`_ for a complete list of changes.
+
+DXF export
+^^^^^^^^^^
+
+Export closed paths in the current group as a DXF file for use in other 
+applications, such as for exporting PCB outlines to Horizon EDA.
+
+Where to find it: In the spacebar menu, search for "Export DXF from 
+current group". Note that the current groups needs to have an active 
+workplane.
+
+More versatile arrays
+^^^^^^^^^^^^^^^^^^^^^
+
+Array and mirror groups now support :ref:`multiple source groups<groups-array-multi-source>`, making it 
+easier to reuse groups in more complicated models.
+
+Where to find it: In an array/mirror group, set the sources to "Body up 
+to group" / "Group range".
+
+Same curvature constraints
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Use the same curvature constraint on two bezier curves or an arc and a 
+bezier curve to join them with G2 continuity for super-smooth corners.
+
+.. image:: images/same-curvature.png
+
+Where to find it: Select a point joining two bezier curves or an arc 
+and a bezier curve, and select "Constrain same curvature" from the 
+context menu. You can also convert tangency constraints to same 
+curvature constraints from the context menu.
+
+Improved STEP export
+^^^^^^^^^^^^^^^^^^^^
+
+The new "Export STEP (all)" action exports all bodies to a STEP file.
+Also, all STEP exports now preserve body names and colors.
+
+Where to find it: In the spacebar menu, search for "Export STEP (all)".
+
+Navigation cube
+^^^^^^^^^^^^^^^
+
+The new navigation cube replaces the axes lollipop to see which way's up.
+Compared to what was there before, it's interactive and clicking on a face
+aligns the camera to it.
+
+.. image:: images/axes-cube.png
+
+Where to find it: Top-right corner of the viewport.
+
+Improved constraining workflow
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When creating a constraint with a datum such as distance, you can enter 
+and place the datum in the constraining tool so the newly-created 
+constraint is as you want it right away.
+
+
+Constraints that apply in 3D rather than in a workplane can now be 
+created directly from the context/constraining menu without turning off 
+the active workplane.
+
+.. image:: images/constrain-3d-new.png
+
+
 In Version 1.3
 --------------
 
