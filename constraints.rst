@@ -16,6 +16,9 @@ accessible by pressing :kbd:`z`. Constraints can only be
 created if at least one of the selected entities is in the current 
 group to prevent creating redundant or conflicting constraints.
 
+Some constraints can be converted to similar constraints in the context 
+menu, such as "point on line" to "midpoint".
+
 Points coincident
 -----------------
 
@@ -268,12 +271,16 @@ Curve/Curve tangent
 Constrains two arcs or bezier curves to be tangent at a shared point.
 
 :Workplane: none
-:Selection: Two arcs or two bezier curves or arc and bezier curve
+:Selection: Point at which the two arcs/beziers line coincide
 :Tool: Constrain curve/curve tangent
 
 This constraint used to be called Arc/Arc tangent in versions prior to 
 1.2.
 
+If there are more than two entities coincident at the selected point,
+also select the lines of the entities that should be constrained to be tangent.
+This also applies to all other tangency constraints. This is supported 
+since version 1.4.
 
 Arc/Line tangent
 ----------------
@@ -298,7 +305,7 @@ Since version 1.2
 Bezier/Bezier tangent symmetric
 -------------------------------
 
-Constraints the tangents of two bezier curves to be symmetric at a 
+Constrains the tangents of two bezier curves to be symmetric at a 
 shared point
 
 :Workplane: none
@@ -306,6 +313,30 @@ shared point
 :Tool: Constrain tangent to be symmetric
 
 Since version 1.2
+
+Bezier/Bezier same curvature
+----------------------------
+
+Constrains two bezier curves to have the same curvature at a shared 
+point
+
+:Workplane: none
+:Selection: Point at which the two bezier curves coincide
+:Tool: Constrain same curvature
+
+Since version 1.4
+
+Bezier/Arc same curvature
+-------------------------
+
+Constrains a bezier curve and an arc to have the same curvature at a shared 
+point
+
+:Workplane: none
+:Selection: Point at which bezier curve and arc coincide
+:Tool: Constrain same curvature
+
+Since version 1.4
 
 Parallel
 --------

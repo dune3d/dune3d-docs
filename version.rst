@@ -15,9 +15,9 @@ By Application version
 ----------------------
 
 .. csv-table::
-   :header: "Type", "1.0.0", "1.1.0", "1.2.0", "1.3.0"
+   :header: "Type", "1.0.0", "1.1.0", "1.2.0", "1.3.0", "1.4.0"
 
-   Document, 10, 12, 23, 30
+   Document, 10, 12, 23, 30, 35
 
 
 Changelog
@@ -53,3 +53,8 @@ Changelog
   - 28: Add clone group
   - 29: Add pipe group
   - 30: Add picture entities
+  - 31: save solid model operation in sketch groups 
+  - 32: support constraining points to 3D beziers
+  - 33: add bezier/bezier same curvature constraint
+  - 34: support multiple source groups on array and mirror groups
+  - 35: add bezier/arc same curvature constraint
