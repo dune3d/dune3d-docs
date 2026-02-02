@@ -133,7 +133,7 @@ In the **workspace browser**, click the plus (+) icon to add an extrusion group.
 .. image:: images/tutorial/extrusion-group.png
 
 | Now you see a grey 3d solid appearing.
-| If you can't see it's sides, rotate the view by dragging with the right mouse button.
+| If you can't see its sides, rotate the view by dragging with the right mouse button.
 
 .. note:: 
  See :doc:`usage` for how to navigate the 3D viewport.
@@ -144,7 +144,7 @@ Change its height by dragging the lines on the top surface.
 To set its height, right-click on one of the vertical lines and select **"Constrain distance"**.
 
 | If nothing appears, turn off the solid model by clicking on the cube next to **"Body"** in the left side of the window,
-| then drag the meassuremnt number until it's outside of the solid model. 
+| then drag the measurement number until it's outside of the solid model. 
 
 .. image:: images/tutorial/extrude-constrained.png
 
@@ -288,4 +288,4 @@ Export
 
 
 | Here ends this tutorial, 
-| **Congratulation, you did a great job!**
+| **Congratulations, you did a great job!**
