@@ -1,7 +1,7 @@
 Groups and bodies
 =================
 
-A document consists of an ordered list groups. Each group contains
+A document consists of an ordered list of groups. Each group contains
 entities and constraints that result in a set of equations that gets 
 solved. Groups are solved in the order they're in the document. Once a 
 group is solved, the position of its entities can't be modified by 
@@ -39,7 +39,7 @@ Reference
 A reference group is the first group in any document. It automatically contains three 
 workplanes, one for each axis. Neither the group nor its workplanes can 
 be deleted. Reference groups can't be added explicitly. Pressing delete
-on a reference workplane hides it. I can be made visible in the group 
+on a reference workplane hides it. It can be made visible in the group 
 settings of the reference group.
 
 It's not possible to add entities to the reference group or to set an 
@@ -275,7 +275,7 @@ look like this:
 
 .. image:: images/pipe.png
 
-To select spine entities, use the so-called tool or click on the button 
+To select spine entities, use the tool of that name or click on the button 
 next to Spine in the Group tab.
 
 For proper solid model generation, it can be required to set a start 
