@@ -12,7 +12,7 @@ There are certain restrictions as to which entities can be copied:
  - Document entities can't be copied
  - If there are entities from multiple workplanes, only the ones in the workplane with the most selected entities will be copied
  - A workplane will only be copied if it's the workplane from above
- - Single workplanes can be copied
+ - Multiple workplanes cannot be copied (by extension, single workplanes may be copied)
 
 Constraints that only reference to-be copied entities are copied 
 automatically even if not selected. Constraints referencing other 
