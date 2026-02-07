@@ -130,7 +130,7 @@ entered value. Selecting a line is equivalent to selecting its endpoints.
 Aligned distance
 ----------------
 
-Constrains the (euclidean) distance between two points projected onto 
+Constrains the (Euclidean) distance between two points projected onto 
 the alignment entity to be the entered value. Selecting a line is equivalent to selecting its endpoints.
 
 :Workplane: optional
