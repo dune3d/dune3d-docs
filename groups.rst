@@ -112,9 +112,9 @@ Since version 1.2
 Loft
 ----
 
-A loft group creates a solid by interpolating between two or more 
+A loft group creates a solid by interpolating between closed paths from two or more
 sketches. It adds no degrees of freedom and requires each source group 
-to contain exactly one closed path.
+to contain exactly one closed path in its active workplane.
 
 Since version 1.2
 
