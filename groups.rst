@@ -80,13 +80,20 @@ If there is no preceding solid model in the current body, the operation
 It's possible and supported to create multiple disjoint solids in one 
 extrusion group.
 
+An extrusion group adds lines parallel to the extrusion vector for 
+every point in the source group and the origin of the source workplane.
+It also adds translated copies of entities from the source 
+group that formed the profile of the extrusion at the faces of the 
+extruded solid.
 
 Lathe
 -----
 
 A lathe group creates a solid by rotating closed paths from the source
-group's active workplane along a specified point and vector. To specify
-it, either a line or a workplane must be selected when creating the
+group's active workplane along a specified point and vector.
+The workplane reference is stored in the group, so 
+changing the active workplane of the source group has no effect. To specify
+the lathe axis, either a line or a workplane must be selected when creating the
 group. If a workplane is selected, lathe group is based on its normal
 vector.
 
@@ -94,6 +101,9 @@ For proper solid model generation, the paths should not cross over the
 vector, as otherwise the body will self-intersect and cancel itself out.
 
 A lathe group adds no degrees of freedom.
+
+For every point in the source group, it adds a circle centered and 
+oriented to the lathe axis that passes through the point.
 
 Operation has the the same semantics as in extrusion groups.
 
@@ -107,13 +117,17 @@ from a lathe group in the way that it only sweeps the paths by a
 variable angle. It thus adds one degree of freedom. Setting the mode to 
 Offset makes the start angle another degree of freedom.
 
+Similar to an extrusion group, a revolve group translates its source 
+entities to the faces of the revolved solid. Unlike lathe or extrusion 
+groups, it does not create entities from points in the source group.
+
 Since version 1.2
 
 Loft
 ----
 
 A loft group creates a solid by interpolating between closed paths from two or more
-sketches. It adds no degrees of freedom and requires each source group 
+sketches. It adds no degrees of freedom or entities and requires each source group 
 to contain exactly one closed path in its active workplane.
 
 Since version 1.2
@@ -125,8 +139,11 @@ Linear array
 A linear array group replicates entities from its source group as often 
 as specified in "Count" along a vector. Its detailed operation depends 
 on whether it has an active workplane or not.
+If the source group has no generated entities like loft, there will be no entities in the linear 
+array group to constrain the translation increment. To work around this, 
+manually add entities to the source group.
 
-If it has an active workplane, the vector is in that workplane so it adds two degrees of freedom.
+If the array group has an active workplane, the vector is in that workplane so it adds two degrees of freedom.
 Entities from the source group in the same workplane will be copied, as 
 well as entities in 3D space. Entities in other workplanes won't be 
 copied.
