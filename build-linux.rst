@@ -25,6 +25,7 @@ Make sure you got these dependencies installed:
 *  git (build-time only, required when building from a git repo)
 *  python-gobject (build-time only)
 *  python-cairo (build-time only)
+*  libspnav
 
 And a C++ compiler that supports ``format``.
 
