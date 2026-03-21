@@ -15,6 +15,7 @@ Make sure you got these dependencies installed:
 *  opencascade
 *  uuid
 *  libepoxy
+*  libspnav (optional, for `spacenav <https://spacenav.sourceforge.net/>`_ support)
 *  pkg-config (build-time only)
 *  librsvg (build-time only)
 *  glm (build-time only, since it's just headers)
