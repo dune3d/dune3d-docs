@@ -112,7 +112,9 @@ Press :kbd:`Space` and search for **"Draw point in workplane"**:
 
 and place the point on the arch.
 
-Then use the **"Constrain vertical"** tool (right-click) to constrain it to be directly above the arc's center.
+Then use the **"Constrain vertical"** tool (right-click) to constrain 
+it to be directly above the arc's center by selecting it and the arc's 
+center.
 
 .. image:: images/tutorial/arc-dot.png
 
