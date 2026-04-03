@@ -174,7 +174,7 @@ This might be is easier in wireframe view (solid model off).
  :kbd:`g` toggles between construction and normal line mode.
  
 | Make sure to start and end the line from the two corner points so that the point-point constraints are created automatically.
-| Watch the **bootom toolbar** and the color of the points to make sure you got them.
+| Watch the **bottom toolbar** and the color of the points to make sure you got them.
 
 .. image:: images/tutorial/draw-diagonal.png
 
