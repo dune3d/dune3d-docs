@@ -9,7 +9,7 @@ They look like these:
 
 Both point and comma are recognized as a decimal separator regardless of locale settings. By default all numbers are treated as millimeters. Suffixing a number with an ``i`` or ``in`` will treat it as inches. Use ``mi`` or ``mil`` to convert from thous.
 
-Additionally, two-operand infix math is supported, so you can to this:
+Additionally, two-operand infix math is supported, so you can do operations such as:
 
 - Addition: ``1+2``
 - Subtraction: ``1-2``
