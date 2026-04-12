@@ -1,14 +1,14 @@
 Groups and bodies
 =================
 
-A document consists of an ordered list groups. Each group contains
+A document consists of an ordered list of groups. Each group contains
 entities and constraints that result in a set of equations that gets 
 solved. Groups are solved in the order they're in the document. Once a 
 group is solved, the position of its entities can't be modified by 
 subsequent groups.
 
 Groups can optionally have an active workplane. It can be in the same 
-or any previous group. Use the "Set workplane" and "Clear workplane" 
+of any previous group. Use the "Set workplane" and "Clear workplane" 
 tools to change the active workplane. With an active workplane, it 
 becomes possible to draw entities in 2D space in that workplane.
 
