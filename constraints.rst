@@ -7,7 +7,10 @@ distance or angle allow entering a value.
 
 Some constraints can have a workplane. Unless otherwise noted, this 
 means that the constraint applies in the workplane, that is all 
-entities are projected onto the workplane.
+entities are projected onto the workplane. Some constraints can optionally
+applied in 3D. In that case there is a button with "in 3D" in the context menu:
+
+.. image:: images/constraint-3d-button.png
 
 In general, constraints are created by selecting the to be constrained 
 entities and invoking the requisite tool. In addition to the context 
